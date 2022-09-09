@@ -5,14 +5,14 @@
 /**
  * main - Entry point
  *
- * Retrun: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	int d, p;
 
-	for (d = '0'; d < '9'; d++)
+	fr (d = '0'; d < '9'; d++)
 	{
 		for (p = d + 1; p <= '9'; p++)
 		{
@@ -21,7 +21,7 @@ int main(void)
 				putchar(d);
 				putchar(p);
 
-			if (d == '8' && p == '9')
+				if (d == '8' && p == '9')
 					continue;
 
 				putchar(',');
