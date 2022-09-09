@@ -1,11 +1,11 @@
-#include <std.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -22,7 +22,7 @@ int main(void)
 			putchar((q / 10) + '0');
 			putchar((q % 10) + '0');
 
-			if (p == '98' && q == '99')
+			if (p == 98 && q == 99)
 				continue;
 
 			putchar(',');
