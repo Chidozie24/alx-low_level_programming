@@ -1,38 +1,37 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * print_to_98 - prints all the integers between the number given and 98
- * @n: number to count from
- *
- * Return: void
+ * print_to_98 - This function prints a 11 natural numbers
+ * from n to 98, followed by a new line
+ * @n: Starting integer to count down or up to 98
  */
-
 void print_to_98(int n)
 {
-	if (n > 98)
+	int i;
+
+	if (n < 98)
 	{
-		while (n >= 98)
+		for (i = n; i <= 98; i++)
 		{
-			printf("%d", n);
-			if (n != 98)
-			{
-				printf(",");
-			}
-			n--;
+			if (i != 98)
+				printf("%i, ", i);
+			else
+				printf("%i", i);
+		}
+	}
+	else if (n > 98)
+	{
+		for (i = n; i >= 98; i--)
+		{
+			if (i != 98)
+				printf("%i, ", i);
+			else
+				printf("%i", i);
 		}
 	}
 	else
-	{
-		while (n <= 98)
-		{
-			printf("%d", n);
-			if (n != 98)
-			{
-				printf(",");
-			}
-			n++;
-		}
-	}
+		printf("%i", n);
+
 	printf("\n");
 }
