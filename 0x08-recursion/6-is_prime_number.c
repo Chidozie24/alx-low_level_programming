@@ -3,7 +3,7 @@
 /*
  * prime_check - verify if s is the square root of c
  * @s: parameter
- * @c: number to find if is a prime numberr
+ * @c: number to find if is a prime number
  * Return: 1 or 0
  */
 
