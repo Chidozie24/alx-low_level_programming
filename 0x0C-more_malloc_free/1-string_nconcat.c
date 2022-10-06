@@ -9,9 +9,9 @@
  *
  * Return: a pointer to the string array of the 2 strings.
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	
 	char *s3;
 	unsigned int i, len1, len2, total_len;
 
